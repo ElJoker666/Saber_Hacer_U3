@@ -117,21 +117,22 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
                 <h2 class="text-lg font-bold mb-2">SecureStay Hotel</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est nec ipsum bibendum consectetur.</p>
+                <p class="text-sm">En SecureStay, entendemos la importancia de tu seguridad y tranquilidad durante tus viajes. Nos enorgullece ofrecer no solo un alojamiento cómodo y acogedor, sino también un entorno donde la seguridad es una prioridad absoluta.</p>
             </div>
             <div>
                 <h2 class="text-lg font-bold mb-2">Contact Information</h2>
-                <p class="text-sm"><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
-                <p class="text-sm"><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                <p class="text-sm"><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Saltillo, México</p>
+                <p class="text-sm"><i class="fas fa-phone"></i> +52 844-529-1303</p>
                 <p class="text-sm"><i class="fas fa-envelope"></i> info@securestay.com</p>
             </div>
             <div>
                 <h2 class="text-lg font-bold mb-2">Follow Us</h2>
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-                </div>
+                <ul class="flex space-x-4">
+                <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#" class="text-blue-500 hover:text-blue-600"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
             </div>
         </div>
         <hr class="mt-4 mb-2 border-gray-600">

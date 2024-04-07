@@ -1,19 +1,22 @@
 @extends('layouts.user')
- 
-@section('title', 'contactanos')
- 
+
+@section('title', 'Contáctanos')
+
 @section('contents')
 
-<main class="bg-white-100">
-    <h1 class="text-3xl font-bold mb-4">Contáctanos</h1>
+<main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <section class="text-center mb-8 bg-gray-200 py-12">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Contáctanos</h2>
+        <p class="mt-2 text-lg text-gray-600">¡Estamos aquí para ayudarte!</p>
+    </section>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white p-6 rounded-lg shadow-md">
             <h2 class="text-xl font-bold mb-2">Información de contacto:</h2>
             <ul class="mb-4">
                 <li><strong>Dirección:</strong> Av. Principal 123, Saltillo, México</li>
-                <li><strong>Teléfono:</strong> +52 8445291303</li>
-                <li><strong>Correo electrónico:</strong> <a href="mailto:info@hotelxample.com">info@SecureStay Hotel.com</a></li>
+                <li><strong>Teléfono:</strong> +52 844-529-1303</li>
+                <li><strong>Correo electrónico:</strong> <a href="mailto:info@securestay.com">info@securestay.com</a></li>
             </ul>
         </div>
 
@@ -35,22 +38,23 @@
 
     <div class="bg-white p-6 rounded-lg shadow-md mt-6">
         <h2 class="text-xl font-bold mb-2">Formulario de contacto:</h2>
-       <form action="enviar.php" method="post" class="mb-4 flex flex-wrap">
-            <div class="mb-4 w-1/2 pr-2">
-            <label for="nombre" class="block mb-2">  Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="w-full border rounded-md px-4 py-2" required>
+        <form action="enviar.php" method="post" class="mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="nombre" class="block mb-2">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="w-full border rounded-md px-4 py-2" required>
+                </div>
+                <div>
+                    <label for="correo" class="block mb-2">E-mail:</label>
+                    <input type="email" id="correo" name="email" placeholder="Correo electrónico" class="w-full border rounded-md px-4 py-2" required>
+                </div>
             </div>
-            <div class="mb-4 w-1/2 pl-2">
-            <label for="correo" class="block mb-2">  E-mail:</label>
-                <input type="email" id="correo" name="email" placeholder="Correo electrónico" class="w-full border rounded-md px-4 py-2" required>
-            </div>
-            <div class="mb-4 w-full">
-            <label for="mensaje" class="block mb-2">  Mensaje:</label>
+            <div class="mb-4">
+                <label for="mensaje" class="block mb-2">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" class="w-full border rounded-md px-4 py-2" required></textarea>
             </div>
             <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Enviar</button>
         </form>
-
 
         <h2 class="text-xl font-bold mb-2">Preguntas frecuentes (FAQ):</h2>
         <p class="mb-4">Antes de ponerte en contacto con nosotros, consulta nuestras preguntas frecuentes para ver si tu pregunta ya ha sido respondida: <a href="#" class="text-blue-500 hover:text-blue-600">Preguntas frecuentes</a></p>
@@ -59,5 +63,5 @@
         <p>Si necesitas ayuda para hacer o modificar una reserva, por favor, visita nuestra página de reservas o ponte en contacto con nuestro equipo de reservas al +52 8445291303.</p>
     </div>
 </main>
-    
+
 @endsection
