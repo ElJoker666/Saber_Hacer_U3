@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" href="hotel.png">
 </head>
  
 <body>
@@ -107,13 +108,18 @@
                         <span class="text-[15px] ml-4 text-gray-200 font-bold">Profile</span>
                     </div>
                 </a>
-                <a href="{{ route('logout') }}">
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+                
+                <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <div class="my-4 bg-gray-600 h-[1px]"></div>
                     <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
                         <i class="bi bi-box-arrow-in-right"></i>
                         <span class="text-[15px] ml-4 text-gray-200 font-bold">Logout</span>
                     </div>
                 </a>
+                
             </div>
         </div>
         <div class="flex flex-col w-full h-screen px-4 py-8 mt-10">

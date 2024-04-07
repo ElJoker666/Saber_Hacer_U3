@@ -20,6 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/rooms', function () {
+    return view('rooms');
+});
 
 Route::controller(AuthController::class)->group(function(){
     Route::get('register', 'register')->name('register');
