@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ReservasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -67,3 +68,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
     Route::put('/admin/products/edit/{id}', [ProductController::class, 'update'])->name('admin/products/update');
     Route::delete('/admin/products/destroy/{id}', [ProductController::class, 'destroy'])->name('admin/products/destroy');
 });
+
+Route::post('/reservar', [ReservasController::class, 'create'])->name('reservar');
+Route::get('/reservas', [ReservasController::class, 'mostrarReservas'])->name('reservas');
+
