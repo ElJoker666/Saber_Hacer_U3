@@ -29,6 +29,10 @@ Route::get('/contactanos', function () {
     return view('contactanos');
 });
 
+Route::get('/faq', function () {
+    return view('faq');
+});
+
 Route::controller(AuthController::class)->group(function(){
     Route::get('register', 'register')->name('register');
     Route::post('register', 'registerSave')->name('register.save');

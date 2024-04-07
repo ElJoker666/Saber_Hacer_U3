@@ -57,7 +57,7 @@
         </form>
 
         <h2 class="text-xl font-bold mb-2">Preguntas frecuentes (FAQ):</h2>
-        <p class="mb-4">Antes de ponerte en contacto con nosotros, consulta nuestras preguntas frecuentes para ver si tu pregunta ya ha sido respondida: <a href="#" class="text-blue-500 hover:text-blue-600">Preguntas frecuentes</a></p>
+        <p class="mb-4">Antes de ponerte en contacto con nosotros, consulta nuestras preguntas frecuentes para ver si tu pregunta ya ha sido respondida:  <a href="{{ url('/faq') }}" class="text-blue-500 hover:text-blue-600">Preguntas frecuentes</a></p>
 
         <h2 class="text-xl font-bold mb-2">¿Necesitas ayuda con una reserva?</h2>
         <p>Si necesitas ayuda para hacer o modificar una reserva, por favor, visita nuestra página de reservas o ponte en contacto con nuestro equipo de reservas al +52 8445291303.</p>
