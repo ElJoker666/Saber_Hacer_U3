@@ -24,6 +24,11 @@ Route::get('/rooms', function () {
     return view('rooms');
 });
 
+
+Route::get('/contactanos', function () {
+    return view('contactanos');
+});
+
 Route::controller(AuthController::class)->group(function(){
     Route::get('register', 'register')->name('register');
     Route::post('register', 'registerSave')->name('register.save');
