@@ -5,35 +5,44 @@
 @section('contents')
 
 <main class="bg-white-100">
-    <!-- Banner inicial -->
-<section class="py-16 bg-gray-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-5xl font-bold">Welcome to SecureStay Hotel</h2>
-        <p class="mt-4 text-xl">Your perfect destination for a memorable stay!</p>
-    </div>
-</section>
-
+    <!-- Banner con imagen de fondo -->
+    <section class="relative bg-gray-900 text-white py-16">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-opacity-75" style="background-image: url('banner1.jpg');"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-5xl font-bold">Bienvenido a SecureStay Hotel</h2>
+            <p class="mt-4 text-xl">¡Tu destino perfecto para una estancia memorable!</p>
+        </div>
+    </section>
     
     <!-- Promociones del hotel -->
-    <section class="py-12">
+    <section class="py-12 bg-white-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-900">Special Offers</h2>
+            <h2 class="text-3xl font-semibold mb-8 text-center text-gray-900">¡Ofertas Especiales!</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Special Spring Offer</h3>
-                    <p>Book your stay this spring and get 20% off!</p>
+                    <h3 class="text-xl font-semibold mb-4">Oferta Especial de Primavera</h3>
+                    <p>¡Reserva tu estancia esta primavera y obtén un 20% de descuento!</p>
                 </div>
                 <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Family Vacation Package</h3>
-                    <p>Enjoy a family vacation with our exclusive package deals!</p>
+                    <h3 class="text-xl font-semibold mb-4">Paquete de Vacaciones Familiares</h3>
+                    <p>¡Disfruta de unas vacaciones familiares con nuestras exclusivas ofertas de paquetes!</p>
                 </div>
                 <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-4">Weekend Getaway</h3>
-                    <p>Escape for the weekend and save big!</p>
+                    <h3 class="text-xl font-semibold mb-4">Escapada de Fin de Semana</h3>
+                    <p>¡Escápate durante el fin de semana y ahorra mucho!</p>
                 </div>
             </div>
         </div>
+        <div class="mt-12 bg-gray-800 text-white py-8 text-center bg-cover bg-center" style="background-image: url('banner2.jpg');">
+            <p class="text-lg">¡Aprovecha estas increíbles ofertas y reserva hoy mismo!</p>
+            <a href="#" class="inline-block mt-4 bg-gray-900 hover:bg-gray-700 text-white py-3 px-6 rounded-lg text-lg font-semibold">Reservar Ahora</a>
+        </div>
+        
     </section>
+    
+    
+
     
     <!-- Marcas con las que trabajamos -->
     <section class="py-12 bg-gray-100">

@@ -11,26 +11,27 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <link rel="icon" href="hotel.png">
 </head>
  
 <body>
     <div>
-        <nav class="bg-gray-800">
+        <nav class="bg-gray-800 py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-16">
+                <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <div class="flex-shrink-0 text-white">
-                            <a href="{{ url('/') }}" class="text-white text-2xl font-bold">SecureStay Hotel</a>
+                            <a href="{{ url('/') }}" class="text-white text-2xl font-bold"><i class="fas fa-hotel"></i> SecureStay Hotel</a>
                         </div>
-                        <div class="hidden md:block">
-                            <div class="ml-10 flex items-baseline space-x-4">
-                                <a href="{{ url('/') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('/') ? 'bg-gray-700 text-white' : '' }}">Home</a>
-                                <a href="{{ url('/about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('about') ? 'bg-gray-700 text-white' : '' }}">About Us</a>
-                                <a href="{{ url('/contactanos') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('contact') ? 'bg-gray-700 text-white' : '' }}">Contact Us</a>
-                                <a href="{{ url('/rooms') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('rooms') ? 'bg-gray-700 text-white' : '' }}">Rooms</a>
+                        <div class="hidden md:block ml-10">
+                            <div class="flex items-baseline space-x-4">
+                                <a href="{{ url('/') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('/') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-home"></i> Home</a>
+                                <a href="{{ url('/about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('about') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-info-circle"></i> About Us</a>
+                                <a href="{{ url('/contactanos') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('contact') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-envelope"></i> Contact Us</a>
+                                <a href="{{ url('/rooms') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('rooms') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-bed"></i> Rooms</a>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="hidden md:block">
@@ -40,12 +41,12 @@
                                     <a href="{{ url('/profile') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ Auth::user()->name }}</a>
                                     <form method="POST" action="{{ route('logout') }}">
                                         @csrf
-                                        <a href="{{ route('logout') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" onclick="event.preventDefault(); this.closest('form').submit();">Logout</a>
+                                        <button type="submit" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fas fa-sign-out-alt"></i> Logout</button>
                                     </form>
                                 @else
-                                    <a href="{{ route('login') }}" class="font-semibold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Log in</a>
+                                    <a href="{{ route('login') }}" class="font-semibold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fas fa-sign-in-alt"></i> Log in</a>
                                     @if (Route::has('register'))
-                                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Register</a>
+                                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"><i class="fas fa-user-plus"></i> Register</a>
                                     @endif
                                 @endauth
                             @endif
@@ -68,10 +69,10 @@
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="md:hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <a href="{{ url('/') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="{{ url('/about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
-                    <a href="{{ url('/contact') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
-                    <a href="{{ url('/rooms') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Rooms</a>
+                    <a href="{{ url('/') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fas fa-home"></i> Home</a>
+                    <a href="{{ url('/about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fas fa-info-circle"></i> About Us</a>
+                    <a href="{{ url('/contact') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fas fa-envelope"></i> Contact Us</a>
+                    <a href="{{ url('/rooms') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"><i class="fas fa-bed"></i> Rooms</a>
                 </div>
                 <div class="pt-4 pb-3 border-t border-gray-700">
                     <div class="flex items-center px-5">
@@ -91,15 +92,13 @@
                         </button>
                     </div>
                     <div class="mt-3 px-2 space-y-1">
-                        <a href="{{ url('/profile') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Your Profile</a>
-                        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Settings</a>
-                        <a href="{{ url('/logout') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Sign out</a>
+                        <a href="{{ url('/profile') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"><i class="fas fa-user"></i> Your Profile</a>
+                        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="{{ url('/logout') }}" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"><i class="fas fa-sign-out-alt"></i> Sign out</a>
                     </div>
                 </div>
             </div>
         </nav>
-        
-        
         
         <main>
             <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">

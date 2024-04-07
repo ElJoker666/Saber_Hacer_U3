@@ -11,11 +11,8 @@
         <h2 class="text-4xl font-bold text-gray-800 mb-4">Explora nuestras habitaciones</h2>
         <p class="mt-2 text-lg text-gray-600">Descubre la variedad de habitaciones que ofrecemos para tu estancia.</p>
         <div class="mt-8">
-            <!-- Aquí puedes agregar iconos, ilustraciones o animaciones -->
-            <img src="tu-imagen-aqui.png" alt="Ilustración de habitaciones" class="mx-auto" style="max-width: 400px;">
         </div>
     </section>
-    
 
     <!-- Habitaciones -->
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
