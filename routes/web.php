@@ -23,7 +23,15 @@ Route::get('/', function () {
 Route::get('/rooms', function () {
     return view('rooms');
 });
-
+Route::get('/habitacion_estandar', function () {
+    return view('habitacion_estandar');
+});
+Route::get('/habitacion_lujo', function () {
+    return view('habitacion_lujo');
+});
+Route::get('/suite_familiar', function () {
+    return view('suite_familiar');
+});
 
 Route::get('/contactanos', function () {
     return view('contactanos');

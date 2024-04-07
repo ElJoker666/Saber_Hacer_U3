@@ -68,78 +68,42 @@
     <!-- Cartas de tipos de habitaciones -->
     <section class="py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-semibold mb-6 text-gray-900">Room Types</h2>
+            <h2 class="text-2xl font-semibold mb-6 text-gray-900">Tipos de habitaciones</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Tipo de habitación 1 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <img src="https://via.placeholder.com/400x250" alt="Room 1" class="w-full h-48 object-cover object-center">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Standard Room</h3>
-                        <p class="text-gray-700 mb-4">Ideal for a comfortable stay for individuals or couples.</p>
-                        <p class="text-gray-700 mb-2">Price: $100/night</p>
-                        <p class="text-gray-700 mb-2">Capacity: 2 persons</p>
-                        <p class="text-gray-700 mb-2">Type: Standard</p>
-                        <a href="#" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
+                        <h3 class="text-xl font-semibold mb-2">Habitación Estándar</h3>
+                        <p class="text-gray-700 mb-4">Ideal para una estancia cómoda para individuos o parejas.</p>
+                        <p class="text-gray-700 mb-2">Precio: $100/noche</p>
+                        <p class="text-gray-700 mb-2">Capacidad: 2 personas</p>
+                        <p class="text-gray-700 mb-2">Tipo: Estándar</p>
+                        <a href="{{ url('habitacion_estandar') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
                     </div>
                 </div>
                 <!-- Tipo de habitación 2 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <img src="https://via.placeholder.com/400x250" alt="Room 2" class="w-full h-48 object-cover object-center">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
-                        <p class="text-gray-700 mb-4">Luxurious room with extra space and amenities.</p>
-                        <p class="text-gray-700 mb-2">Price: $150/night</p>
-                        <p class="text-gray-700 mb-2">Capacity: 2 persons</p>
-                        <p class="text-gray-700 mb-2">Type: Deluxe</p>
-                        <a href="#" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
+                        <h3 class="text-xl font-semibold mb-2">Habitación de Lujo</h3>
+                        <p class="text-gray-700 mb-4">Habitación lujosa con espacio adicional y comodidades.</p>
+                        <p class="text-gray-700 mb-2">Precio: $150/noche</p>
+                        <p class="text-gray-700 mb-2">Capacidad: 2 personas</p>
+                        <p class="text-gray-700 mb-2">Tipo: De lujo</p>
+                        <a href="{{ url('habitacion_lujo') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
                     </div>
                 </div>
                 <!-- Tipo de habitación 3 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <img src="https://via.placeholder.com/400x250" alt="Room 3" class="w-full h-48 object-cover object-center">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Suite</h3>
-                        <p class="text-gray-700 mb-4">Spacious and elegant suite with stunning views.</p>
-                        <p class="text-gray-700 mb-2">Price: $200/night</p>
-                        <p class="text-gray-700 mb-2">Capacity: 4 persons</p>
-                        <p class="text-gray-700 mb-2">Type: Suite</p>
-                        <a href="#" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
-                    </div>
-                </div>
-                <!-- Tipo de habitación 4 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Room 4" class="w-full h-48 object-cover object-center">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Room with View</h3>
-                        <p class="text-gray-700 mb-4">Enjoy stunning views from our premium rooms.</p>
-                        <p class="text-gray-700 mb-2">Price: $180/night</p>
-                        <p class="text-gray-700 mb-2">Capacity: 2 persons</p>
-                        <p class="text-gray-700 mb-2">Type: Premium</p>
-                        <a href="#" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
-                    </div>
-                </div>
-                <!-- Tipo de habitación 5 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Room 5" class="w-full h-48 object-cover object-center">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Penthouse Suite</h3>
-                        <p class="text-gray-700 mb-4">Indulge in luxury with our penthouse suite.</p>
-                        <p class="text-gray-700 mb-2">Price: $400/night</p>
-                        <p class="text-gray-700 mb-2">Capacity: 6 persons</p>
-                        <p class="text-gray-700 mb-2">Type: Penthouse</p>
-                        <a href="#" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
-                    </div>
-                </div>
-                <!-- Tipo de habitación 6 -->
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Room 5" class="w-full h-48 object-cover object-center">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Penthouse Suite</h3>
-                        <p class="text-gray-700 mb-4">Indulge in luxury with our penthouse suite.</p>
-                        <p class="text-gray-700 mb-2">Price: $400/night</p>
-                        <p class="text-gray-700 mb-2">Capacity: 6 persons</p>
-                        <p class="text-gray-700 mb-2">Type: Penthouse</p>
-                        <a href="#" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
+                        <h3 class="text-xl font-semibold mb-2">Suite Familiar</h3>
+                        <p class="text-gray-700 mb-4">Perfecta para familias que desean comodidad y espacio extra.</p>
+                        <p class="text-gray-700 mb-2">Precio: $200/noche</p>
+                        <p class="text-gray-700 mb-2">Capacidad: 4 personas</p>
+                        <p class="text-gray-700 mb-2">Tipo: Suite</p>
+                        <a href="{{ url('suite_familiar') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
                     </div>
                 </div>
             </div>
