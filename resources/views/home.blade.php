@@ -50,16 +50,16 @@
             <h2 class="text-2xl font-semibold mb-6 text-gray-900">Our Partners</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="flex items-center justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Partner 1" class="h-12">
+                    <img src="images.png" alt="Partner 1" class="h-12">
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Partner 2" class="h-12">
+                    <img src="clip.png" alt="Partner 2" class="h-12">
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Partner 3" class="h-12">
+                    <img src="pepsi.png" alt="Partner 3" class="h-12">
                 </div>
                 <div class="flex items-center justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Partner 4" class="h-12">
+                    <img src="mk.png" alt="Partner 4" class="h-12">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Tipo de habitación 1 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Room 1" class="w-full h-48 object-cover object-center">
+                   <img src="estandar 2.jpg" alt="Room 1" class="w-full h-48 object-cover object-center">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Habitación Estándar</h3>
                         <p class="text-gray-700 mb-4">Ideal para una estancia cómoda para individuos o parejas.</p>
@@ -84,7 +84,7 @@
                 </div>
                 <!-- Tipo de habitación 2 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Room 2" class="w-full h-48 object-cover object-center">
+                    <img src="lujo.jpg" alt="Room 2" class="w-full h-48 object-cover object-center">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Habitación de Lujo</h3>
                         <p class="text-gray-700 mb-4">Habitación lujosa con espacio adicional y comodidades.</p>
@@ -96,7 +96,7 @@
                 </div>
                 <!-- Tipo de habitación 3 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Room 3" class="w-full h-48 object-cover object-center">
+                    <img src="suite.jpg" alt="Room 3" class="w-full h-48 object-cover object-center">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Suite Familiar</h3>
                         <p class="text-gray-700 mb-4">Perfecta para familias que desean comodidad y espacio extra.</p>

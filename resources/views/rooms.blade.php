@@ -18,7 +18,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
         <!-- Habitación 1 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col">
-            <img src="https://via.placeholder.com/800x600" alt="Room 1" class="w-full object-cover">
+            <img src="estandar 2.jpg" alt="Room 1" class="w-full object-cover" style="width: 450px; height: 250px;">
             <div class="p-6 flex-grow">
                 <h3 class="text-xl font-semibold mb-2">Habitación Estándar</h3>
                 <p class="text-gray-700 mb-4">Ideal para una estancia cómoda para individuos o parejas.</p>
@@ -37,7 +37,7 @@
     
         <!-- Habitación 2 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col">
-            <img src="https://via.placeholder.com/800x600" alt="Room 2" class="w-full object-cover">
+            <img src="lujo.jpg" alt="Room 2" class="w-full object-cover" style="width: 450px; height: 250px;">
             <div class="p-6 flex-grow">
                 <h3 class="text-xl font-semibold mb-2">Habitación de Lujo</h3>
                 <p class="text-gray-700 mb-4">Habitación lujosa con espacio adicional y comodidades.</p>
@@ -55,7 +55,9 @@
     
         <!-- Habitación 3 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col">
-            <img src="https://via.placeholder.com/800x600" alt="Room 3" class="w-full object-cover">
+           <!-- Etiqueta <img> con anchura y altura especificadas -->
+<img src="suite.jpg" alt="Room 3" class="w-full object-cover" style="width: 450px; height: 250px;">
+
             <div class="p-6 flex-grow">
                 <h3 class="text-xl font-semibold mb-2">Suite Familiar</h3>
                 <p class="text-gray-700 mb-4">Perfecta para familias que desean comodidad y espacio extra.</p>
