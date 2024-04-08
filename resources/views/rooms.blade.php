@@ -27,7 +27,11 @@
                     <li>Capacidad: 2 personas</li>
                     <li>Tipo: Estándar</li>
                 </ul>
-                <a href="{{ url('habitacion_estandar') }}" class="block mx-auto mt-4 w-40 bg-gray-800 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-gray-700">Reservar</a>
+                @auth
+    <a href="{{ url('habitacion_estandar') }}" class="block mx-auto mt-4 w-40 bg-blue-600 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300">Reservar</a>
+@else
+    <a href="{{ route('login') }}" class="block mx-auto mt-4 w-40 bg-gray-800 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 transition duration-300">Inicia sesión para reservar</a>
+@endauth
             </div>
         </div>
     
@@ -42,8 +46,11 @@
                     <li>Capacidad: 2 personas</li>
                     <li>Tipo: De lujo</li>
                 </ul>
-                <a href="{{ url('habitacion_lujo') }}" class="block mx-auto mt-4 w-40 bg-gray-800 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-gray-700">Reservar</a>
-            </div>
+                @auth
+    <a href="{{ url('habitacion_lujo') }}" class="block mx-auto mt-4 w-40 bg-blue-600 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300">Reservar</a>
+@else
+    <a href="{{ route('login') }}" class="block mx-auto mt-4 w-40 bg-gray-800 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 transition duration-300">Inicia sesión para reservar</a>
+@endauth</div>
         </div>
     
         <!-- Habitación 3 -->
@@ -57,8 +64,11 @@
                     <li>Capacidad: 4 personas</li>
                     <li>Tipo: Suite</li>
                 </ul>
-                <a href="{{ url('suite_familiar') }}" class="block mx-auto mt-4 w-40 bg-gray-800 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-gray-700">Reservar</a>
-            </div>
+                @auth
+    <a href="{{ url('suite_familiar') }}" class="block mx-auto mt-4 w-40 bg-blue-600 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300">Reservar</a>
+@else
+    <a href="{{ route('login') }}" class="block mx-auto mt-4 w-40 bg-gray-800 text-white text-center py-3 rounded-lg text-xl font-semibold hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 transition duration-300">Inicia sesión para reservar</a>
+@endauth </div>
         </div>
     
         <!-- Puedes continuar añadiendo más habitaciones aquí -->

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ComentariosController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReservasController;
@@ -71,4 +72,12 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
 Route::post('/reservar', [ReservasController::class, 'create'])->name('reservar');
 Route::get('/reservas', [ReservasController::class, 'mostrarReservas'])->name('reservas');
+
+Route::post('/rooms', [ComentariosController::class, 'create'])->name('comentario');
+Route::get('/habitacion_estandar', [ComentariosController::class, 'mostrarComentarios'])->name('comentarios');
+Route::get('/habitacion_lujo', [ComentariosController::class, 'mostrarComentarios2'])->name('comentarios2');
+Route::get('/suite_familiar', [ComentariosController::class, 'mostrarComentarios3'])->name('comentarios3');
+
+
+
 

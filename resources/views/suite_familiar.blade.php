@@ -92,6 +92,52 @@
                 }
             });
         </script>
+        <div class="container mx-auto px-4 py-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Comentarios</h2>
+        
+            <!-- Formulario para agregar comentario -->
+            <form class="mb-6" action="{{ route('comentario') }}" method="POST">
+                @csrf
+                <div class="mb-4">
+                    <label for="name" class="text-gray-800 font-semibold block">Nombre</label>
+                    <input type="text" id="name" name="name" class="border border-gray-700 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm" required>
+                </div>
+                <div class="mb-4">
+                    <label for="comment" class="text-gray-800 font-semibold block">Comentario</label>
+                    <textarea id="comment" name="comment" rows="4" class="border border-gray-700 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm" required></textarea>
+                </div>
+                <input type="hidden" id="datetime" name="datetime" value="{{ now() }}">
+                <input type="hidden" id="cuarto" name="cuarto" value="suite_familiar">
+                <div class="flex justify-end">
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300">Enviar</button>
+                </div>
+            </form>
+        
+            <!-- Lista de comentarios -->
+            <div class="divide-y divide-gray-300">
+                @foreach($comentarios as $comentario)
+                    @if($comentario->cuarto === 'suite_familiar')
+                        <div class="py-4">
+                            <h3 class="text-lg font-semibold">{{ $comentario->name }}</h3>
+                            <p class="text-gray-600 mb-2">{{ $comentario->comment }}</p>
+                            <p class="text-sm text-gray-500">Fecha y hora: {{ $comentario->datetime }}</p>
+                        </div>
+                    @endif
+                @endforeach
+            </div>
+            
+        
+            <!-- Paginación -->
+            <div class="flex justify-center mt-8">
+                <nav class="inline-flex">
+                    <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-l-md hover:bg-gray-300">Anterior</a>
+                    <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 hover:bg-gray-300">1</a>
+                    <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 hover:bg-gray-300">2</a>
+                    <!-- Agrega más enlaces según sea necesario -->
+                    <a href="#" class="bg-gray-200 text-gray-700 px-3 py-1 rounded-r-md hover:bg-gray-300">Siguiente</a>
+                </nav>
+            </div>
+        </div>
     </div>
 </section>
 

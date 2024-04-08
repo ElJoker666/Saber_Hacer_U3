@@ -79,7 +79,7 @@
                         <p class="text-gray-700 mb-2">Precio: $100/noche</p>
                         <p class="text-gray-700 mb-2">Capacidad: 2 personas</p>
                         <p class="text-gray-700 mb-2">Tipo: Estándar</p>
-                        <a href="{{ url('habitacion_estandar') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
+                        <a href="{{ url('rooms') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
                     </div>
                 </div>
                 <!-- Tipo de habitación 2 -->
@@ -91,7 +91,7 @@
                         <p class="text-gray-700 mb-2">Precio: $150/noche</p>
                         <p class="text-gray-700 mb-2">Capacidad: 2 personas</p>
                         <p class="text-gray-700 mb-2">Tipo: De lujo</p>
-                        <a href="{{ url('habitacion_lujo') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
+                        <a href="{{ url('rooms') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
                     </div>
                 </div>
                 <!-- Tipo de habitación 3 -->
@@ -103,7 +103,7 @@
                         <p class="text-gray-700 mb-2">Precio: $200/noche</p>
                         <p class="text-gray-700 mb-2">Capacidad: 4 personas</p>
                         <p class="text-gray-700 mb-2">Tipo: Suite</p>
-                        <a href="{{ url('suite_familiar') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
+                        <a href="{{ url('rooms') }}" class="block bg-gray-800 text-white text-center py-2 px-4 rounded-md hover:bg-gray-700">Book Now</a>
                     </div>
                 </div>
             </div>
