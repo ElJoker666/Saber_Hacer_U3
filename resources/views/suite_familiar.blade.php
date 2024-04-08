@@ -14,9 +14,9 @@
 
         <!-- Imágenes de la suite -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <img src="https://via.placeholder.com/800x600" alt="Suite 1" class="w-full object-cover rounded-lg">
-            <img src="https://via.placeholder.com/800x600" alt="Suite 2" class="w-full object-cover rounded-lg">
-            <img src="https://via.placeholder.com/800x600" alt="Suite 3" class="w-full object-cover rounded-lg">
+            <img src="suite 2.jpg" alt="Suite 1" class="w-full object-cover rounded-lg">
+            <img src="suite.jpg" alt="Suite 2" class="w-full object-cover rounded-lg">
+            <img src="suite 3.jpg" alt="Suite 3" class="w-full object-cover rounded-lg">
         </div>
 
         <!-- Detalles de la suite -->
