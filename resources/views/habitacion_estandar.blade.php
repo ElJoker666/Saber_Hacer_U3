@@ -14,9 +14,9 @@
 
         <!-- Imágenes de la habitación -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <img src="https://via.placeholder.com/800x600" alt="Room 1" class="w-full object-cover rounded-lg">
-            <img src="https://via.placeholder.com/800x600" alt="Room 2" class="w-full object-cover rounded-lg">
-            <img src="https://via.placeholder.com/800x600" alt="Room 3" class="w-full object-cover rounded-lg">
+            <img src="estandar 5.jpg" alt="Room 1" class="w-full object-cover rounded-lg">
+            <img src="estandar 3.jpg" alt="Room 2" class="w-full object-cover rounded-lg" >
+            <img src="estandar 2.jpg" alt="Room 3" class="w-full object-cover rounded-lg">
         </div>
 
         <!-- Detalles de la habitación -->
