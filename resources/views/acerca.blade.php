@@ -12,7 +12,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <img src="hotel-image-1.jpg" alt="Imagen del hotel" class="w-full mb-4 rounded-md shadow-md">
+            <img src="banner1.jpg" alt="Imagen del hotel" class="w-full mb-4 rounded-md shadow-md" style="width: 450px; height: 250px;>
             <h2 class="text-xl font-bold mb-2">Nuestra historia:</h2>
             <p class="mb-4">En nuestro hotel, nos dedicamos a ofrecer una experiencia excepcional a cada uno de nuestros huéspedes. Con una combinación perfecta de comodidad, lujo y atención al detalle, hacemos que tu estancia sea inolvidable.</p>
             <p class="mb-4">Con una ubicación privilegiada en el corazón de la ciudad, estamos cerca de las principales atracciones y ofrecemos fácil acceso a todo lo que necesitas para una estancia perfecta.</p>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <img src="hotel-image-2.jpg" alt="Imagen del hotel" class="w-full mb-4 rounded-md shadow-md">
+            <img src="servicios.png" alt="Imagen del hotel" class="w-full mb-4 rounded-md shadow-md" style="width: 450px; height: 250px;>
             <h2 class="text-xl font-bold mb-2">Servicios:</h2>
             <ul class="mb-4">
                 <li>Habitaciones cómodas y bien equipadas</li>
