@@ -39,6 +39,10 @@ Route::get('/contactanos', function () {
     return view('contactanos');
 });
 
+Route::get('/acerca', function () {
+    return view('acerca');
+});
+
 Route::get('/faq', function () {
     return view('faq');
 });
