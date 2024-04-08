@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('precio');
             $table->string('fecha_llegada');
             $table->string('fecha_salida');
+            $table->string('codigo_pedido');
             $table->timestamps();
         });
     }

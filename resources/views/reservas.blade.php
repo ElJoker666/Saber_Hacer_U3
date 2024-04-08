@@ -25,13 +25,16 @@
             @foreach ($userReservas as $reserva)
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
                 <div class="p-6">
-                    <p class="text-2xl font-semibold mb-4"># Orden: {{ $reserva->id }}</p>
+                    <p class="text-2xl font-semibold mb-4"># Orden: {{ substr($reserva->codigo_pedido, 0, 10) }}</p>
                     <p class="text-lg text-gray-600 mb-2">{{ $reserva->email }}</p>
                     <p class="text-lg text-gray-600 mb-2">Cuarto: {{ $reserva->cuarto }}</p>
                     <p class="text-lg text-gray-600 mb-2">Fecha de llegada: {{ $reserva->fecha_llegada }}</p>
                     <p class="text-lg text-gray-600 mb-2">Fecha de salida: {{ $reserva->fecha_salida }}</p>
                     <p class="text-lg text-gray-600 mb-2">Precio: {{ $reserva->precio }}</p>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg text-lg">Pagar</button>
+                    <a href="#" class="block mx-auto mt-4 w-40 bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg text-xl font-semibold">Pagar</a>
+
+                    <a href="{{route('reserva.edit', $reserva->id)}}" class="block mx-auto mt-4 w-40 bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg text-xl font-semibold">Editar Reservación</a>
+
                 </div>
                 
             </div>            

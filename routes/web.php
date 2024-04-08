@@ -72,6 +72,8 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
 Route::post('/reservar', [ReservasController::class, 'create'])->name('reservar');
 Route::get('/reservas', [ReservasController::class, 'mostrarReservas'])->name('reservas');
+Route::get('/reservas/{id}/edit', [ReservasController::class, 'edit'])->name('reserva.edit');
+Route::put('/reservas/{id}', [ReservasController::class, 'update'])->name('reserva.update');
 
 Route::post('/rooms', [ComentariosController::class, 'create'])->name('comentario');
 Route::get('/habitacion_estandar', [ComentariosController::class, 'mostrarComentarios'])->name('comentarios');
