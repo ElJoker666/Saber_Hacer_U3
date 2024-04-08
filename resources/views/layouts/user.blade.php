@@ -28,7 +28,7 @@
                         <div class="hidden md:block ml-10">
                             <div class="flex items-baseline space-x-4">
                                 <a href="{{ url('/') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('/') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-home"></i> Home</a>
-                                <a href="{{ url('/about') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('about') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-info-circle"></i> About Us</a>
+                                <a href="{{ url('/acerca') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('about') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-info-circle"></i> About Us</a>
                                 <a href="{{ url('/contactanos') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('contact') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-envelope"></i> Contact Us</a>
                                 <a href="{{ url('/rooms') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium {{ Request::is('rooms') ? 'bg-gray-700 text-white' : '' }}"><i class="fas fa-bed"></i> Rooms</a>
                                 @auth
